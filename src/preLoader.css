@@ -1,0 +1,129 @@
+/* .preloader {
+    height: 100vh;
+    width: 100%;
+    background: #eee;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.preloader .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    color: black;
+} */
+
+/* .preloader { */
+    /* Add animation to the preloader container */
+    /* animation: fadeIn 1s ease-in-out forwards;
+} */
+
+/* .preloader .logo { */
+    /* Add animation to the logo image */
+    /* animation: fadeInLeft 1s ease-in-out forwards; */
+/* }
+
+.preloader .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    color: black;
+} */
+
+/* Define the animation for the preloader container */
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+/* Define the animation for the logo image */
+/* @keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+.preloader {
+    /* Add animation to the preloader container */
+    animation: fadeIn 1s ease-in-out forwards;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preloader .logo {
+    /* Add animation to the logo image */
+    animation: fadeInLeft 1s ease-in-out forwards;
+    margin-bottom: 10px;
+  }
+  
+  .preloader .texts-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    font-weight: 800;
+    overflow: hidden;
+    color: black;
+  }
+  
+  /* Define the animation for the preloader container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Define the animation for the logo image */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }

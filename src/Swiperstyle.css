@@ -1,0 +1,124 @@
+.collage {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0.5vh;
+  padding: 10px;
+  grid-auto-flow:dense;
+}
+
+.grid-item {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  transition: transform 0.3s ease-in-out;
+  border-radius: 9px;
+}
+.grid-item:nth-child(1){
+  grid-column-start: span 2;
+  grid-row-start: span 2;
+}
+.grid-item:nth-child(5) {
+  height: 400px;
+}
+.grid-item:nth-child(11){
+  height: 300px;
+}
+
+.grid-item:nth-child(23){
+ height: 300px;
+}
+.grid-item:nth-child(21){
+  height: 400px;
+}
+.grid-item:nth-child(27){
+height: 300px;
+}
+.grid-item:nth-child(2n+3){
+  .grid-item:last-child(){
+    width: 200px;
+    height:400px ;
+  }
+  grid-column-start: span 2;
+   grid-row-start: span 2;
+}
+
+.grid-item:nth-child(4n+5){
+  grid-row-start: span 3;
+  grid-row-start: span 3;
+}
+.grid-item:nth-child(6n+7){
+  grid-row-start:span 1;
+}
+.grid-item:nth-child(8n+9){
+  grid-column-start: span 1;
+  grid-row-start:span 1;
+}
+@media (max-width: 768px) {
+  .collage {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+/* #app {
+  height: 100%
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+ padding-top: 15px;
+ font-size: 5rem !important;
+ font-weight: bolder;
+ color: #333;
+ text-align: center;
+ text-shadow: 2px 2px 0 rgba(30, 29, 29, 0.231);
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  transition: transform 0.3s ease;
+} */
+
+/* .swiper:hover {
+ transform: scale(1.2);
+} */
+/* 
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 250px;
+  height: 240px;
+
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 30px 20px;
+  box-shadow: 5px 13px 16px rgba(0, 0, 0, 0.58);
+
+} */

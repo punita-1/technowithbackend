@@ -1,0 +1,27 @@
+.myClassForThisDiv {
+    padding: 60px;
+    margin-top: 40px;
+    padding: 55px 63px;
+    background: #222831;
+    color: #9EC8B9!important;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+    
+}
+.myClassForThisDiv.grid{
+  gap: 5rem!important;
+}
+.myClassForThisDiv .aboutCardHeading{
+  font-weight: 700;
+  font-size: 4.2rem;
+}
+.myClassForThisDiv .aboutCardDescription{
+  color:#EEEEEE
+}
+  @media (max-width: 768px) {
+    .myClassForThisDiv {
+      padding: 8px;
+    }
+  }

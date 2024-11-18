@@ -1,0 +1,31 @@
+.viewportheight {
+    height: 100vh;
+
+}
+
+
+.viewportheight {
+    height: calc(100vh-100px);
+    /* background: linear-gradient(180deg, #0c0c1d, #111132, #0c0c1d,); */
+    /* background: linear-gradient(180deg, #0c0c1d, #111132, transparent, #0c0c1d, #111132); */
+    background: linear-gradient(180deg, #0c0c1d, #111132, rgba(17, 17, 50, 0), #111132, #0c0c1d);
+    /* Adjust transparency as needed */
+}
+
+.contact-form {
+    position: relative;
+    margin: auto;
+}
+
+.phonesvg {
+    stroke: white;
+    position: absolute;
+    z-index: 1;
+}
+.forzindex{
+    z-index: 2;
+}
+
+/* .forwidth {
+    width: '100%' !important;
+} */

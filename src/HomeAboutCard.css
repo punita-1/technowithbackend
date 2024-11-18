@@ -1,0 +1,82 @@
+/* .myClassForThisDiv {
+    padding: 30px;
+    height: 60vh;
+} */
+
+.myClassForThisDiv {
+    height: calc(60vh-60px);
+    background: linear-gradient(180deg, #111132, #0c0c1d);
+}
+
+.setheight {
+    padding-top: 150px;
+}
+
+.myClassForThisDiv {
+    padding: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    font-size: 2rem;
+    font-weight: 800;
+    border-radius: 5px;
+
+}
+
+.aboutCardHeading {
+    color: lightgray;
+    font-size: 50px;
+}
+
+.aboutCardDescription {
+
+    color: lightgray;
+}
+
+.myheading {
+    font-size: 39px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* .myClassForThisDiv {
+    padding: 30px;
+    height: 60vh;
+} */
+    .myheading {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .myClassForThisDiv {
+        height: calc(60vh-60px);
+        background: linear-gradient(180deg, #111132, #0c0c1d);
+    }
+
+    .setheight {
+        padding-top: 80px;
+    }
+
+    .myClassForThisDiv {
+        /* margin: 20px; */
+        padding: 23px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 0px;
+        font-size: 1.5rem;
+        font-weight: 400;
+        border-radius: 5px;
+
+    }
+
+    .aboutCardHeading {
+        color: lightgray;
+        font-size: 28px;
+    }
+
+    .aboutCardDescription {
+
+        color: lightgray;
+    }
+}

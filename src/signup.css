@@ -1,0 +1,28 @@
+/* .bodybill {
+    background-image: url(public/images/signin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0; 
+    padding: 0;
+} */
+/* .bodybill {
+    background-size: 100% 100% !important;
+} */
+/* .bg-image {
+    background-image: url(public/images/signin.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  .bodybill {
+    position: relative;
+    z-index: 1;
+  } */
+
+  .newbg {
+    height: calc(100vh-100px);
+    /* background: linear-gradient(180deg, #0c0c1d, #111132, #0c0c1d,); */
+    /* background: linear-gradient(180deg, #0c0c1d, #111132, transparent, #0c0c1d, #111132); */
+    background: linear-gradient(180deg, #0c0c1d, #111132, rgba(17, 17, 50, 0), #111132, #0c0c1d);
+    /* Adjust transparency as needed */
+}

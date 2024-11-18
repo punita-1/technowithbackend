@@ -1,0 +1,212 @@
+/* .card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 35rem;
+    
+    height: 35rem;
+    
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title-truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+    
+}
+
+.card-body-fixed {
+    height: 100px;
+    width: 250px;
+    width: 100%;
+   
+}
+
+.card-img-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card-img-overlay h3,
+.card-img-overlay button {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.card:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.card:hover .card-img-overlay h3,
+.card:hover .card-img-overlay button {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    filter: blur(5px);
+}
+
+.card-title-hover {
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.card-title-hover:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+.btn-hover {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.btn-hover:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+} */
+.card-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    width: 35rem;
+    height: 35rem;
+  }
+  
+  .card:hover {
+    /* transform: scale(1.02); */
+  }
+  
+  .card:hover .card-img-overlay {
+    opacity: 1;
+  }
+  
+  .card:hover .card-img-overlay h3,
+  .card:hover .card-img-overlay button {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  .card:hover .card-img-top {
+    transform: scale(1.1);
+    filter: blur(5px);
+  }
+  
+  .card-title-truncate {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-body-fixed {
+    height: 100px;
+    width: 250px;
+    width: 100%;
+  }
+  
+  .card-img-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-img-overlay h3,
+  .card-img-overlay button {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .card-title-hover {
+    color: white;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .card-title-hover:hover {
+    color: #fff;
+    transform: scale(1.2);
+  }
+  
+  .btn-hover {
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .btn-hover:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  
+  /* Add magnetic effect */
+  .btn-hover:hover {
+    animation: butto 0.9s ease-in-out infinite;
+  }
+
+  .card:hover {
+    animation: magnet 0.3s ease-in-out 1;
+  }
+  @keyframes butto {
+    0% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes magnet {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(2deg);
+    }
+  }

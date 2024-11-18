@@ -1,0 +1,23 @@
+.fontchange {
+    /* font-family: "Paprika", system-ui; */
+    color: lightgrey;
+}
+
+.yolo{
+        height: calc(100vh-100px);
+        background: linear-gradient(180deg, #111132, #0c0c1d);
+      
+}
+/* venue.css */
+
+/* @media screen and (max-width: 768) {
+    .yolo {
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .yolo {
+        padding-top: 400px;
+    }
+} */

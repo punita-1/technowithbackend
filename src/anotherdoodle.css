@@ -1,0 +1,53 @@
+/* .doodle {
+    background-image: url('public/images/doodles/myhero_background.jpg');
+    background-color: rgba(255, 255, 255, 0.5);
+
+} */
+/* .mydoodle {
+    position: relative; 
+} */
+
+/* .mydoodle::before {
+    content: ""; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('public/images/doodles/myhero_background.jpg'); 
+    opacity: 0.1; 
+    z-index: -1; 
+} */
+.sliding {
+    /* text-align: center; */
+    position: absolute;
+    font-size:50vh;
+    bottom: -300px;
+    white-space: nowrap;
+    color: #ffffff09;
+    font-weight: bold;
+    width: 100%;
+
+}
+.wrapup{
+    margin: 200px;
+    align-items: center;
+    text-align: center;
+}
+
+.forcenter{
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapup {
+        margin: 50px; 
+    }
+    
+    .forcenter {
+        font-size: 10px; 
+    }
+}

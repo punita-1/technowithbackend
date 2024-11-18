@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600;900&family=Paprika&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Sorts+Mill+Goudy:ital@0;1&display=swap');
+
+:root {
+    --primary-background-color: #0c0c1d;
+    /* --primary-text-color:#9EC8B9; */
+    /* --primary-dark:#222831; */
+    /* --primary-extra-dark:#222831; */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0c0c1d;
+    color: lightgray;
+}
+
+/* @mixin mobile {
+    @media(max-width:738px){
+        @content;
+    }
+}
+@mixin tablet {
+    @media(max-width:1024px){
+        @content;
+    }
+}
+@mixin desktop {
+    @media(max-width:1366px){
+        @content;
+    }
+} */
