@@ -32,17 +32,17 @@ const Event = () => {
 
       {/* <SearchBar onSearch={handleSearch} /> */}
 
-      <div className='social-icon-heading' 
-      style={{ alignItems: 'center', textAlign: 'center', marginTop:'-90px' }}
+      <div className='social-icon-heading'
+        style={{ alignItems: 'center', textAlign: 'center', marginTop: '-90px' }}
       > <b>EVENTS</b>
-      <SearchBar onSearch={handleSearch} />
+        <SearchBar onSearch={handleSearch} />
 
       </div>
 
 
-      <Tabs className='justify-content-center ' style={{fontSize:'20px'}}>
+      <Tabs className='justify-content-center ' style={{ fontSize: '20px' }}>
         <Tab eventKey="centralized" title="Centralized">
-          <h2 style={{paddingTop:'30px', fontSize:'50px', color:'lightgrey'}}><b>CENTRALIZED EVENTS</b></h2>
+          <h2 style={{ paddingTop: '30px', fontSize: '50px', color: 'lightgrey' }}><b>CENTRALIZED EVENTS</b></h2>
           <CardGroup
             heading="Unite & Ignite: Events for All Students"
             events={searchResults.filter((ev) => ev.category === "centralized")}
@@ -50,7 +50,7 @@ const Event = () => {
           />
         </Tab>
         <Tab eventKey="dep" title="Department">
-          <h2 style={{paddingTop:'30px', fontSize:'50px', color:'lightgrey'}}><b>DEPARTMENT EVENTS</b></h2>
+          <h2 style={{ paddingTop: '30px', fontSize: '50px', color: 'lightgrey' }}><b>DEPARTMENT EVENTS</b></h2>
           <CardGroup
             heading="Department of COMPUTER SCIENCE ENGINEERING(CSE) #COSMOS"
             events={searchResults.filter((ev) => ev.category === "computer")}
@@ -123,7 +123,7 @@ const Event = () => {
           />
         </Tab>
         <Tab eventKey="Society" title="Society">
-        <h2 style={{paddingTop:'30px', fontSize:'50px', color:'lightgrey'}}><b>SOCIETY EVENTS</b></h2>
+          <h2 style={{ paddingTop: '30px', fontSize: '50px', color: 'lightgrey' }}><b>SOCIETY EVENTS</b></h2>
           <CardGroup
             heading="SUNSHINE"
             events={searchResults.filter((ev) => ev.category === "sunshine")}
@@ -158,7 +158,7 @@ const Event = () => {
       </Tabs>
 
       {/* // Add more CardGroup components as needed */}
-      {showPopup && (
+      {/* {showPopup && (
         <div className="popup animate__animated animate__zoomIn animate__faster">
           <div className="popup-content">
             <h5>{selectedEvent.title}</h5>
@@ -168,6 +168,25 @@ const Event = () => {
             <NavLink
               className="btn btn-primary me-2 text-light btn-lg"
               to={"/registerform/" + selectedEvent.id}>
+              Register Now
+            </NavLink>
+
+            <button className="btn btn-secondary btn-lg" onClick={() => setShowPopup(false)}>
+              Close
+            </button>
+          </div>
+        </div>
+      )} */}
+      {showPopup && (
+        <div className="popup animate__animated animate__zoomIn animate__faster">
+          <div className="popup-content">
+            <h5>{selectedEvent.title}</h5>
+            <div className="popup-text mb-3">
+              <pre>{selectedEvent.description}</pre>
+            </div>
+            <NavLink
+              className="btn btn-primary me-2 text-light btn-lg"
+              to={`/registerform/${selectedEvent.id}`}>
               Register Now
             </NavLink>
 

@@ -1,28 +1,97 @@
-/* .bodybill {
-    background-image: url(public/images/signin.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0; 
-    padding: 0;
-} */
-/* .bodybill {
-    background-size: 100% 100% !important;
-} */
-/* .bg-image {
-    background-image: url(public/images/signin.jpg);
-    background-size: cover;
-    background-position: center;
-  }
+/* Signup Container */
+.signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .bodybill {
-    position: relative;
-    z-index: 1;
-  } */
+/* Heading */
+.signup-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
 
-  .newbg {
-    height: calc(100vh-100px);
-    /* background: linear-gradient(180deg, #0c0c1d, #111132, #0c0c1d,); */
-    /* background: linear-gradient(180deg, #0c0c1d, #111132, transparent, #0c0c1d, #111132); */
-    background: linear-gradient(180deg, #0c0c1d, #111132, rgba(17, 17, 50, 0), #111132, #0c0c1d);
-    /* Adjust transparency as needed */
+/* Error Message */
+.error-message {
+    color: #ff4d4d;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+    font-size: 14px;
+    border: none;
+}
+
+/* Button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #73bba3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #88d66c;
+}
+
+button[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .signup-container {
+        padding: 15px;
+        width: 90%;
+    }
+
+    .signup-container h2 {
+        font-size: 20px;
+    }
+
+    .form-group input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+        padding: 10px;
+    }
 }

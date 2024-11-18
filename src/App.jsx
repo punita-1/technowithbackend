@@ -2,10 +2,9 @@ import Home from './Home';
 import Contact from './Contact';
 import About from './About';
 import './App.css';
-// import Signup from './Signup';
+import Signup from './Signup';
 import Gallery from './Gallery.jsx';
 import Event from './Events';
-// import Register_form from './Register_form';
 import Header from './Components/Header';
 import GoToTop from './Components/GoToTop';
 import { GlobalStyle } from "./GlobalStyle";
@@ -16,6 +15,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Profile from './Profile';
 import Cursor from './Cursor';
 // import { AnimatePresence } from 'framer-motion';
+import Register from "./Register";
 
 const App = () => {
 
@@ -52,13 +52,11 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/event' element={<Event />} />
           <Route path='/about' element={<About />} />
-          {/* <Route path='/signup' element={<Signup />} /> */}
+          <Route path='/signup' element={<Signup />} />
           <Route path='/profile' element={<Profile />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/gallery' element={<Gallery />} />
-          {/* <Route path='/registerform'>
-            <Route path=':id' element={<Register_form />} />
-          </ Route> */}
+          <Route path="/registerform/:eventId" element={<Register />} />
 
           <Route path='/*' element={<Error />} />
         </Routes>
